@@ -1,5 +1,9 @@
 pipeline {
-    agent any 
+    agent {
+         node {
+              label 'docker'
+       }
+   } 
     options { timestamps () }
 
     stages {
